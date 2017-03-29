@@ -7,5 +7,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="89*"/>
+            <RowDefinition Height="631*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="title" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hotel ?" VerticalAlignment="Center" FontFamily="Verdana" FontSize="65"/>
+        <TextBlock x:Name="findGuest" HorizontalAlignment="Left" Margin="128,107,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Find gæst" VerticalAlignment="Top" FontSize="25"/>
+        <TextBox x:Name="findGuestName" HorizontalAlignment="Left" Margin="128,188,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top"/>
+        <Button x:Name="findGuestButton" Content="OK" HorizontalAlignment="Left" Margin="238,188,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ListView x:Name="FindGuestListView" HorizontalAlignment="Left" Height="294" Margin="105,291,0,0" Grid.Row="1" VerticalAlignment="Top" Width="199"/>
+    </Grid>
 </Page>
