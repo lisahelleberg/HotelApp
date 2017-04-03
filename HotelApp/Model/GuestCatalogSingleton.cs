@@ -27,7 +27,7 @@ namespace HotelApp.Model
         public void AddGuest(Guest AddedGuest)
         {
             GuestList.Add(AddedGuest);
-            PersistencyService.Save
+            PersistencyService.
         }
     }
 }

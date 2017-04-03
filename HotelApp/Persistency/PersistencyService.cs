@@ -33,5 +33,16 @@ namespace HotelApp.Persistency
                 return null;
             }
         }
+        public static void SaveGuestFromJsonAsync(Guest SingletonFile)
+        {
+            using (client)
+            {
+                client.BaseAddress = new Uri(serverUrl);
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                var response = client.PostAsJsonAsync<Guest<("api/guests", SingletonFile).Result;
+            }
+
+        }
     }
 }
