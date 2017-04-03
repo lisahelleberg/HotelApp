@@ -95,7 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Handler\GuestHandler.cs" />
     <Compile Include="Model\GuestCatalogSingleton.cs" />
+    <Compile Include="Persistency\PersistencyService.cs" />
     <Compile Include="ViewModel\GuestViewModel.cs" />
     <Compile Include="View\CreateGuest.cs" />
     <Compile Include="View\GuestPage.xaml.cs">
@@ -130,9 +132,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Persistency\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

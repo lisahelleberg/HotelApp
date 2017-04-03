@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
+using HotelApp.Persistency;
+using System.Diagnostics;
+using System.ComponentModel;
 
 namespace HotelApp.Model
 {
@@ -20,6 +23,11 @@ namespace HotelApp.Model
         public GuestCatalogSingleton()
         {
             GuestList = new ObservableCollection<Guest>();
+        }
+        public void AddGuest(Guest AddedGuest)
+        {
+            GuestList.Add(AddedGuest);
+            PersistencyService.Save
         }
     }
 }
