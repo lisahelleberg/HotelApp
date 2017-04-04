@@ -27,9 +27,9 @@ namespace HotelApp
             this.InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void CreateGuestButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(View.CreateGuest), null);
         }
     }
 }

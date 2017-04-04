@@ -14,11 +14,11 @@
         </Grid.RowDefinitions>
         <TextBlock x:Name="title" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hotel ?" VerticalAlignment="Center" FontFamily="Verdana" FontSize="65"/>
         <ListView x:Name="FindGuestListView" HorizontalAlignment="Left" Height="559" Margin="38,38,0,0" Grid.Row="1" VerticalAlignment="Top" Width="355" Background="#FF1700FF"/>
-        <Button x:Name="FindAllGuestsButton" Content="Find alle gæster" HorizontalAlignment="Left" Margin="451,38,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Button x:Name="FindGuestButton" Content="Find gæst" HorizontalAlignment="Left" Margin="451,102,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <TextBox x:Name="FindGuestTextBox" HorizontalAlignment="Left" Margin="575,102,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
-        <Button x:Name="CreateGuestButton" Content="Opret gæst" HorizontalAlignment="Left" Margin="451,172,0,0" Grid.Row="1" VerticalAlignment="Top" Click="button_Click"/>
-        <Button x:Name="UpdateGuestButton" Content="Opdater gæst" HorizontalAlignment="Left" Margin="451,239,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Button x:Name="DeleteGuestButton" Content="Slet gæst" HorizontalAlignment="Left" Margin="451,308,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="FindGuestTextBox" HorizontalAlignment="Left" Margin="539,158,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
+        <AppBarButton x:Name="DeleteGuestButton" HorizontalAlignment="Left" Icon="Delete" Label="Delete gæst" Margin="451,422,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <AppBarButton x:Name="CreateGuestButton" HorizontalAlignment="Left" Icon="Add" Label="Opret gæst" Margin="451,227,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.483" Click="CreateGuestButton_Click"/>
+        <AppBarButton x:Name="FindAllGuestButton" HorizontalAlignment="Left" Icon="Find" Label="Find alle gæster" Margin="451,38,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.471,0.5"/>
+        <AppBarButton x:Name="FindGuestButton" HorizontalAlignment="Left" Icon="Find" Label="Find gæst" Margin="451,134,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <AppBarButton x:Name="appBarButton" HorizontalAlignment="Left" Icon="Add" Label="Opdater gæst" Margin="451,313,0,0" Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </Page>
