@@ -23,7 +23,7 @@ namespace HotelApp.Handler
             TempGuest.Name = GVM.guests.Name;
             TempGuest.Guest_No = GVM.guests.Guest_No;
             TempGuest.Address = GVM.guests.Address;
-            GuestCatalogSingleton.SingletonInstance.AddGuest(TempGuest);
+            //GuestCatalogSingleton.SingletonInstance.AddGuest(TempGuest);
         }
     }
 }

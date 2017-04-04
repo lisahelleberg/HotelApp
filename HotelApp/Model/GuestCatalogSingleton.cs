@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
-using HotelApp.Persistency;
+//using HotelApp.Persistency;
 using System.Diagnostics;
 using System.ComponentModel;
 
@@ -24,10 +24,10 @@ namespace HotelApp.Model
         {
             GuestList = new ObservableCollection<Guest>();
         }
-        public void AddGuest(Guest AddedGuest)
-        {
-            GuestList.Add(AddedGuest);
-            PersistencyService.
-        }
+        //public void AddGuest(Guest AddedGuest)
+        //{
+        //    GuestList.Add(AddedGuest);
+        //    PersistencyService.
+        //}
     }
 }

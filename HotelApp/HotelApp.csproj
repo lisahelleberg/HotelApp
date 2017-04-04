@@ -99,7 +99,9 @@
     <Compile Include="Model\GuestCatalogSingleton.cs" />
     <Compile Include="Persistency\PersistencyService.cs" />
     <Compile Include="ViewModel\GuestViewModel.cs" />
-    <Compile Include="View\CreateGuest.cs" />
+    <Compile Include="View\CreateGuest.xaml.cs">
+      <DependentUpon>CreateGuest.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\GuestPage.xaml.cs">
       <DependentUpon>GuestPage.xaml</DependentUpon>
     </Compile>
@@ -127,6 +129,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\CreateGuest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\GuestPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

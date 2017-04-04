@@ -13,11 +13,12 @@
             <RowDefinition Height="631*"/>
         </Grid.RowDefinitions>
         <TextBlock x:Name="title" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hotel ?" VerticalAlignment="Center" FontFamily="Verdana" FontSize="65"/>
-        <TextBlock x:Name="findGuest" HorizontalAlignment="Left" Margin="128,107,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Find gæst" VerticalAlignment="Top" FontSize="25"/>
-        <TextBox x:Name="findGuestName" HorizontalAlignment="Left" Margin="128,188,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Navn" VerticalAlignment="Top"/>
-        <Button x:Name="findGuestButton" Content="OK" HorizontalAlignment="Left" Margin="238,188,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <ListView x:Name="FindGuestListView" HorizontalAlignment="Left" Height="294" Margin="105,291,0,0" Grid.Row="1" VerticalAlignment="Top" Width="199" Background="#FF1700FF"/>
-        <Button x:Name="deleteGuestButton" Content="Slet gæst" HorizontalAlignment="Left" Margin="367,553,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Button x:Name="createGuestButton" Content="Opret gæst" HorizontalAlignment="Left" Margin="435,307,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <ListView x:Name="FindGuestListView" HorizontalAlignment="Left" Height="559" Margin="38,38,0,0" Grid.Row="1" VerticalAlignment="Top" Width="355" Background="#FF1700FF"/>
+        <Button x:Name="FindAllGuestsButton" Content="Find alle gæster" HorizontalAlignment="Left" Margin="451,38,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button x:Name="FindGuestButton" Content="Find gæst" HorizontalAlignment="Left" Margin="451,102,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="FindGuestTextBox" HorizontalAlignment="Left" Margin="575,102,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="216"/>
+        <Button x:Name="CreateGuestButton" Content="Opret gæst" HorizontalAlignment="Left" Margin="451,172,0,0" Grid.Row="1" VerticalAlignment="Top" Click="button_Click"/>
+        <Button x:Name="UpdateGuestButton" Content="Opdater gæst" HorizontalAlignment="Left" Margin="451,239,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Button x:Name="DeleteGuestButton" Content="Slet gæst" HorizontalAlignment="Left" Margin="451,308,0,0" Grid.Row="1" VerticalAlignment="Top"/>
     </Grid>
 </Page>
